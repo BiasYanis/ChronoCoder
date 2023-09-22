@@ -10,8 +10,8 @@ window.onload = function(){
 
     var e_replay = document.querySelector('#replay');
 
-    var backgroundPerYear = ["url('Ressources/Images/Twitch.jpg')", "url('./Ipad.png')", "url('./Window2000.jpg')", "blue", "yellow", "", ""];
-    var bannerPerYear = ["url('Ressources/Images/Netflix.jpg')", "green", "red", "white", "", ""];
+    var backgroundPerYear = ["url('Ressources/Images/Twitch.jpg')", "url('Ressources/Images/Twitter.png')", "url('Ressources/Images/MSN Messenger.png')", "blue", "yellow", "", ""];
+    var bannerPerYear = ["url('Ressources/Images/Barre2020.png')", "url('Ressources/Images/Barre2010.png')", "url('Ressources/Images/Barre2000.jpg", "white", "", ""];
 
     var e_date = document.querySelector('#year');
     var date = 2020;
@@ -100,7 +100,7 @@ window.onload = function(){
 
         for (let index = 0; index < buttons.length; index++) {
             const element = buttons[index];
-            element.style.backgroundColor = 'cadetblue';
+            element.style.backgroundColor = 'transparent';
         }
         
         //changer le color pour l'image quand elle seront la
