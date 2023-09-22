@@ -9,20 +9,22 @@
 </head>
 <body>
     <div id="UI">
-         <p id="lifePoint">Life points : 3</p>
-         <p id="Annee">2020</p>
+         <p id="year">2020</p>
+         <p id="lifePoint">Lives left : 3</p>
          <p id="questionNb">Question 1 out of 8</p>
     </div>
     <div id="gameScreen">
-        <div id="question">
-            <p>Thème :</p>
-            <p>Question :</p>    
-        </div>
+            <p id="question">Question :</p>    
         <div id="answerButtons">
-            <button>Réponse 1</button>
-            <button>Réponse 2</button>
-            <button>Réponse 3</button>
-            <button>Réponse 4</button>    
+            <div>
+                <button id="0">Réponse 1</button>
+                <button id="1">Réponse 2</button>    
+            </div>
+            <div>
+                <button id="2">Réponse 3</button>
+                <button id="3">Réponse 4</button>        
+            </div>
+            <button id="replay">Play again</button>
         </div>
     </div>
 </body>

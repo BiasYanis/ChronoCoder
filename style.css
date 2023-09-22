@@ -31,13 +31,15 @@
     display: flex;
     align-items:flex-start;
     flex-direction: column;
+    margin: 0vh 10vw;
+    font-size: 24px;
 }
 
 #answerButtons {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 60px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 body {
@@ -58,11 +60,16 @@ body {
 
 
 button {
+    width: 300px;
+    height: 70px;
     font-family: sans-serif;
     background-image: url("./Ressources/Images/Bouton\ 2020.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
     padding: 20px 10px;
-   
+    background-color: cadetblue;
+    border-color: azure;
+    margin: 40px;
+    font-size: 18px;
 }
