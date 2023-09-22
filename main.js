@@ -9,8 +9,9 @@ window.onload = function(){
     ["", "", "", "", "", 1]];
 
     var e_replay = document.querySelector('#replay');
-    var backgroundPerYear = ["burlywood", "black", "blue", "yellow", "", ""];
-    var bannerPerYear = ["bisque", "green", "red", "white", "", ""];
+
+    var backgroundPerYear = ["url('Ressources/Images/Twitch.jpg')", "url('./Ipad.png')", "url('./Window2000.jpg')", "blue", "yellow", "", ""];
+    var bannerPerYear = ["url('Ressources/Images/Netflix.jpg')", "green", "red", "white", "", ""];
 
     var e_date = document.querySelector('#year');
     var date = 2020;
@@ -103,8 +104,9 @@ window.onload = function(){
         }
         
         //changer le color pour l'image quand elle seront la
-        e_gameScreen.style.backgroundColor = backgroundPerYear[questionNb];
-        e_UI.style.backgroundColor = bannerPerYear[questionNb];
+        e_gameScreen.style.backgroundImage = backgroundPerYear[questionNb];
+        e_UI.style.backgroundImage = bannerPerYear[questionNb];
+    
         
         e_questionNb.textContent = `Question ${questionNb + 1} out of 8`
         if (date > 1950)
