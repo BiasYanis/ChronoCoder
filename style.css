@@ -4,6 +4,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -16,6 +17,8 @@
 #gameScreen {
     height: 60vh;
     width: 70vw;
+    color: white;
+    font-family: sans-serif;
     display: flex;
     background-image: url("./IA.jpg");
     background-repeat: no-repeat;
@@ -55,6 +58,7 @@ body {
 
 
 button {
+    font-family: sans-serif;
     background-image: url("./Ressources/Images/Bouton\ 2020.png");
     background-repeat: no-repeat;
     background-size: cover;
