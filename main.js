@@ -10,15 +10,16 @@ window.onload = function(){
     
     var e_replay = document.querySelector('#replay');
 
-    var backgroundPerYear = ["url('Ressources/Images/Twitch.jpg')", "url('Ressources/Images/Twitter.png')", "url('Ressources/Images/MSN Messenger.png')", "blue", "yellow", "", ""];
-    var bannerPerYear = ["url('Ressources/Images/Barre2020.png')", "url('Ressources/Images/Barre2010.png')", "url('Ressources/Images/Barre2000.jpg", "white", "", ""];
+    var backgroundPerYear = ["url('Ressources/Images/Twitch.jpg')", "url('Ressources/Images/Twitter.png')", "url('Ressources/Images/MSN Messenger.png')", "url('Ressources/Images/Yahoo.png')", "url('Ressources/Images/IBM.png')", "url('Ressources/Images/Cobol.jpg')", "url('Ressources/Images/CAB500.jpg')","url('Ressources/Images/Turing.jpg')"];
+    var bannerPerYear = ["url('Ressources/Images/Barre2020.png')"];/*, "url('Ressources/Images/Barre2010.png')", "url('Ressources/Images/Barre2000.jpg", "white", "", ""];*/
+   
 
     var e_date = document.querySelector('#year');
     var date = 2020;
     var e_question = document.querySelector('#question');
     var questionNb = 0;
 
-    e_question.textContent = `Question : ${questionList[0][0]}`;
+    e_question.textContent = `${questionList[0][0]}`;
 
     var buttons = document.getElementsByTagName('button');
     for (let index = 0; index < buttons.length; index++) {
@@ -48,15 +49,15 @@ window.onload = function(){
         e_lifePoints.textContent = `Lives left : ${lifePoints}`;
         e_questionNb.textContent = `Question ${questionNb + 1} out of 8`
         e_date.textContent = `${date}`;
-        e_question.textContent = `Question : ${questionList[questionNb][0]}`;
+        e_question.textContent = `${questionList[questionNb][0]}`;
 
-        e_gameScreen.style.backgroundColor = backgroundPerYear[questionNb];
-        e_UI.style.backgroundColor = bannerPerYear[questionNb];
+        e_gameScreen.style.backgroundImage = backgroundPerYear[questionNb];
+        e_UI.style.backgroundImage = bannerPerYear[questionNb];
 
-        for (let index = 0; index < buttons.length; index++) {
+        /*for (let index = 0; index < buttons.length; index++) {
             const element = buttons[index];
             element.style.backgroundColor = 'cadetblue';
-        }
+        }*/
 
         for (let index = 0; index < buttons.length; index++ ) {
             const element = buttons[index];
@@ -132,7 +133,7 @@ window.onload = function(){
         if (date > 1950)
             date -= 10;
         e_date.textContent = `${date}`;
-        e_question.textContent = `Question : ${questionList[questionNb][0]}`;
+        e_question.textContent = `${questionList[questionNb][0]}`;
         
         for (let index = 0; index < buttons.length; index++) {
             const element = buttons[index];
