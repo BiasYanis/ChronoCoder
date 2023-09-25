@@ -13,6 +13,15 @@
     justify-content: space-around;
     margin-top: 10vh;
 }
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #UI {
     height: 10vh;
     width: 70vw;
@@ -46,13 +55,6 @@
     gap: 30px;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #lifePoint {
     padding-left: 12vw;
 
@@ -82,4 +84,15 @@ button {
     text-align: center;
     
     
+}
+
+#fireworks {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+#replay {
+    position:absolute; top:80%; left:70%;
 }
