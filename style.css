@@ -91,6 +91,8 @@ button {
     height: 100vh;
     position: relative;
     z-index: -1;
+    background-image: url("./Ressources/Images/popups.webp");
+    background-size: cover;
 }
 
 #replay {
