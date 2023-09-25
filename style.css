@@ -45,7 +45,14 @@ body {
     align-items:flex-start;
     flex-direction: column;
     margin: 0vh 10vw;
+    padding:25px 0px;
     font-size: 24px;
+    background-image: url("Ressources/Images/Bouton\ Question.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0vh -6vw;
+    color: #ffffe0;
+    
 }
 
 #answerButtons {
@@ -71,7 +78,7 @@ button {
     height: 120px;
     color: white;
     font-family: sans-serif;
-    background-image: url("./Ressources/Images/Bouton\ 2020.png");
+    background-image: url("Ressources/Images/Bouton 2020.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10px;
